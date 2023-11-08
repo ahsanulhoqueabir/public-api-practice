@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dracula">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports DataBase</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/09cd734a72.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="m-auto flex flex-col gap-3 items-center py-5 mb-5">
+        <h1 class="text-2xl font-bold ">Lets Dive in Word</h1>
+
+    </header>
+    <main>
+        <section class="mx-auto flex justify-center">
+            <div class="join">
+                <input id="searchInput" class="input input-bordered join-item" placeholder="Type Word"/>
+                <button id="searchButton" onclick="loadData()" class="btn join-item rounded-r-full"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                <span id="loader" class="ml-4 hidden loading loading-bars loading-md"></span>
+            </div>
+        </section>
+        <section class="">
+            <div class="container justify-between mx-auto w-full lg:w-[40%] border-2 border-slate-50 rounded border-solid px-3 py-5 mt-5">
+                <div class="flex flex-auto justify-between gap-3 items-center text-4xl">
+                    <div>
+                        <h1 class="font-bold">hi</h1>
+                        <p class="text-md"></p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-play"> <audio src=""></audio> </i>
+                    </div>
+                </div>
+                <div>
+                    <legend>
+                        
+                    </legend>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -19,7 +19,7 @@ function displayMeme(allMeme)
         div.classList.add('p-3');
         div.classList.add('rounded-md');
         div.innerHTML=`
-            <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <div class="card card-compact w-full h-full bg-base-100 shadow-xl">
             <figure class="h-fit w-fit"><img  src="${meme.url}" alt="Album"/></figure>
             <div class="card-body">
                 <h2 class="card-title">Title: ${meme.title}</h2>

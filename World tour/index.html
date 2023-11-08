@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dracula">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Tour with API</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/09cd734a72.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="m-auto flex flex-col gap-3 items-center py-5">
+        <h1 class="text-2xl font-bold ">World Tour with API</h1>
+        <div class="flex gap-3">
+            <div class="flex gap-2">
+                <input id="Search-Country" type="text" placeholder="Enter Coutry Name" class="input input-bordered input-info w-full max-w-xs" />
+                <button id="Search-btn" class="btn btn-outline"> <span id="srctext"><i class="fa-solid fa-magnifying-glass-location"></i> Search</span> <span id="srcloader" class="hidden loading loading-dots loading-md"></span>        </button>
+            </div>
+            <button id="btn" class="btn  bg-white text-black hover:bg-gray-100 btn-neutral w-fit"> <i class="fa-solid fa-arrows-rotate"></i> Refresh</button>
+        </div>
+    </header>
+    <main>
+        <section id="allCard" class="grid lg:grid-cols-3 gap-4 md:grid-cols-2 mx-2 grid-cols-1">
+            <!-- random post dynamically will be added there  -->
+        </section>
+        <div class="flex justify-center py-5">
+            <button id="showAllCountry" class="btn btn-success">Show All</button>
+        </div>
+        <div>
+            <dialog id="showDetails" class="modal">
+            <div class="modal-box">
+                <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                </form>
+               <div id="modal-body">
+
+                   
+            </div>
+                <span id="loader" class="loading loading-ring text-white loading-md"></span>
+            </div>
+            </dialog>
+        </div>
+    </main>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dracula">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Phone-Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/09cd734a72.js" crossorigin="anonymous"></script>
+    <style>
+        .logo {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+           }
+        
+        .logo img {
+            width: 100px;
+            background-color: aliceblue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header class="m-auto flex flex-col gap-3 items-center py-5 mb-5">
+        <div class="logo">
+            <img src="logo.png" alt="Ahsanul Hoque" />
+        </div>
+        <h1 class="text-5xl mb-3 font-bold text-center">Welcome to Nexon Shop</h1>
+        <section>
+            <img class="h-full w-full" src="Group 48095420.png" alt="img">
+        </section>
+        <section class="flex gap-3">
+            <input id="Company" type="text" placeholder="Search Here" class="input input-bordered input-info w-full max-w-xs" />
+            <button id="Search" class="btn btn-outline capitalize"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+            <span id="loader" class="loading hidden loading-bars loading-lg"></span>
+        </section>
+    </header>
+    <main>
+        <section id="container" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
+            
+        </section>
+        <div class="justify-center flex my-5">
+            <button id="allBtn" class="btn btn-outline hidden btn-info capitalize"><i class="fa-solid fa-eye"></i> Show All</button>
+        </div>
+       
+    </main>
+
+    <!-- Modal  -->
+    <dialog id="ProductDetails" class="modal modal-bottom sm:modal-middle ">
+        <div class="modal-box bg-blue-200 text-black">
+            <div class="flex items-center justify-center">
+                <span id="loader" class="loading hidden loading-dots loading-lg"></span>
+            </div>
+            <div id="detailsBox">
+
+            </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+
+      <!-- footer starts here  -->
+      <footer class="bg-slate-300 text-black py-5  px-10 ">
+        <div class="flex flex-between border-b-2 py-5 border-blue-100 flex-col md:flex-row gap-5">
+            <div class="flex-1">
+                <h1 class="text-3xl font-bold">Hot Gadgets</h1>
+                <p>You can definitely work.</p>
+            </div>
+            <div class="flex gap-3 text-4xl items-center">
+                <a href="http://"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href="http://"><i class="fa-brands fa-square-instagram"></i></a>
+                <button class="btn btn-sm capitalize">Join Premium</button>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 py-5 gap-5 items-center justify-end	">
+            <div class="">
+                <p><a href="http://">Product</a></p>
+                <p> <a href="http://">Browse jobs</a></p>
+                <p><a href="http://">Remote jobs</a></p>
+                <p><a href="http://">Startup jobs</a></p>
+                <p><a href="http://">Company jobs</a></p>
+            </div>
+            <div>
+                <p><a href="">Popular</a></p>
+                <p><a href="">UIUX Design</a></p>
+                <p><a href="">Product Design</a></p>
+                <p><a href="">Back-End Developer</a></p>
+                <p><a href="">Front-End Developer</a></p>
+            </div>
+            <div>
+                <p><a href="">Resource</a></p>
+                <p><a href="">Faq</a></p>
+                <p><a href="">Support</a></p>
+                <p><a href="">Privacy Policy                </a></p>
+                <p><a href="">Terms of Service</a></p>
+            </div>
+            <div >
+                <p><a href="">Company</a></p>
+                <p><a href="">About Us </a></p>
+                <p><a href=""> Contact Us  </a></p>
+                <p><a href="">  Career Tips </a></p>
+                <p><a href="">Careers</a></p>
+            </div>
+
+        </div>
+
+      </footer>
+   
+     
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
