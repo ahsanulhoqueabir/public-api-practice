@@ -16,13 +16,19 @@ In this repository ,i will share those which are made up using public api.
 <b>Language:</b> HTML5,Tailwind CSS Framework,JAVASCRIPT <br>
 <b>Focused:</b> API <br>
 <b>Live:</b> https://random-post-generate.netlify.app/
-</p>
+</p></li>
 <li> <p>
 <b> Project:</b> A random Meme Generate <br>
 <b>Language: </b> HTML5,Tailwind CSS Framework,JAVASCRIPT <br>
 <b>Focused: </b> API <br>
 <b>Live: </b> https://random-meme-generate.netlify.app/
-</p>
+</p> </li>
+<li> <p>
+<b> Project:</b> Mobile Shop <br>
+<b>Language: </b> HTML5,Tailwind CSS Framework,JAVASCRIPT <br>
+<b>Focused: </b> API <br>
+<b>Live: </b> https://mobile-shop-show.netlify.app/
+</p> </li>
 
 </ol>
 
