@@ -30,6 +30,12 @@ In this repository ,i will share those which are made up using public api.
 <b>Live: </b> https://mobile-shop-show.netlify.app/
 </p> </li>
 <li> <p>
+<b> Project:</b> Find Your SportsMan <br>
+<b>Language: </b> HTML5,Tailwind CSS Framework,JAVASCRIPT <br>
+<b>Focused: </b> API <br>
+<b>Live: </b> https://find-your-sportsman.netlify.app/
+</p> </li>
+<li> <p>
 <b> Project:</b> Codeforces Pofile Details and Rating journey <br>
 <b>Language: </b> HTML5,Tailwind CSS Framework,JAVASCRIPT <br>
 <b>Focused: </b> API <br>
