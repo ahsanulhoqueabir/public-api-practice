@@ -45,8 +45,7 @@ In this repository ,i will share those which are made up using public api.
 <b> Project:</b> Country Tour <br>
 <b>Language: </b> HTML5,Tailwind CSS Framework,JAVASCRIPT <br>
 <b>Focused: </b> API <br>
-<b>Live: </b> https://codeforces-profile-rating.netlify.app/
-</p> </li>
+<b>Live: </b> https://country-tour-api.netlify.app/
 
 </ol>
 
