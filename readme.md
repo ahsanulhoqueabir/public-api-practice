@@ -4,7 +4,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
- <h1 align="center">Basic Projects with JS DOM</h1>
+ <h1 align="center">Basic Projects with JS DOM and API</h1>
 
 In this repository ,i will share those which are made up using public api.
 

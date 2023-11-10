@@ -54,24 +54,22 @@ document.querySelector('#value').addEventListener('keypress',(e)=>
         loadData(value)
         loadUser(value)
     }
-    console.log(e.key);
 });
 
 function showData(data)
 {
     let contestNumber = data.length;
-    const main = document.querySelector('#section');
-    main.innerHTML='';
+    makeNull('section')
     if(contestNumber>0)
     {
 
-        main.innerHTML=
+        document.querySelector('#section').innerHTML=
         `
          <h1 class="text-4xl text-center">Rating Data Table</h1>
     
         `;
-        const tbody = document.querySelector('#tbody')
-        tbody.innerHTML='';
+    
+        makeNull('tbody')
         document.querySelector('#thead').innerHTML=
         `
         <tr class="text-xl">
@@ -92,7 +90,7 @@ function showData(data)
             `
             <td>${contestNumber- i}</td>
             <td>${newRating} </td>
-            <td> ${change} </td>
+            <td>${change} </td>
             <td>${rank} </td>
             <td><a href="https://codeforces.com/contest/${contestId}">${contestName} </a></td>
             `;
@@ -114,19 +112,30 @@ function showUser(data)
     </figure>
     <div class="card-body items-left">
         <h2 class="card-title">${firstName ? firstName : 'No Name Found! '}   ${lastName ? lastName : ' '} <div class="badge badge-accent badge-outline">${rank? rank : ' No Data'}</div> </h2>
-        <p class="text-md"><span class="font-bold ">Present Rating: </span>${rating ? rating : 'No Data Found!'} </p>        
-        <p class="text-md"><span class="font-bold ">Max Rating: </span>${maxRating ? maxRating : 'No Data Found!'} </p>        
-        <p class="text-md"><span class="font-bold ">Follower: </span>${friendOfCount ? friendOfCount : 'No Data Found!'} </p>        
-        <p class="text-md"><span class="font-bold ">Country: </span>${country ? country : 'No Data Found!'} </p>
-        <p class="text-md"><span class="font-bold ">City: </span>${city ? city : 'No Data Found!'} </p>
-        <p class="text-md"><span class="font-bold ">Organization: </span>${organization ? organization : 'No Data Found!'} </p>
-
-
+        ${addP('Present Rating',rating)} 
+        ${addP('Max Rating',maxRating)}    
+        ${addP('Follower',friendOfCount)}    
+        ${addP('Country',country)}    
+        ${addP('City',city)}    
+        ${addP('Organization',organization)}    
         <div class="card-actions">
-        <button class="btn btn-primary bg-teal-300 border-0 capitalize hover:bg-blue-100">  <a href="https://codeforces.com/profile/${handle}"><i class="fa-solid fa-chart-simple"></i> Follow Me</a></button>
+        <button class="btn btn-primary bg-teal-300 border-0 capitalize hover:bg-blue-100">  <a target="_blank" href="https://codeforces.com/profile/${handle}"><i class="fa-solid fa-chart-simple"></i> Follow Me</a></button>
         </div>
     </div>
     </div>
    `;
 
+}
+
+// reuseable function 
+
+function addP(name,value)
+{
+   const p = `<p class="text-md"><span class="font-bold ">${name}: </span>${value ? value : 'No Data Found!'} </p>`;
+   return p;
+}
+
+function makeNull(id)
+{
+    document.getElementById(id).innerHTML = '';
 }
