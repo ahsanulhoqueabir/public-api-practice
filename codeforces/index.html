@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dracula">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeforces API Practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/09cd734a72.js" crossorigin="anonymous"></script>
+    <style>
+        .logo {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+           }
+        
+        .logo img {
+            width: 100px;
+            background-color: aliceblue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header class="my-10">
+        <div class=" logo">
+            <img src="https://drive.google.com/uc?export=view&id=1gdYYFMRjHDyOyF4dK2fmyx-oSWy4JYqI">
+        </div>
+        <div class="flex justify-center mx-3 my-3">
+            <h1 class="text-3xl font-bold text-center">Find Codeforces Pofile Details and Rating journey</h1>
+        </div>
+    </header>
+    <body>
+        <div class="flex justify-center gap-3 px-4">
+            <input id="value" type="text" placeholder="CF Handle Name" class="input input-bordered input-success w-full max-w-xs" />
+            <button id="ínputButton" class="btn btn-outline">Search</button>
+            <span id="loader" class="loading hidden loading-bars loading-lg"></span>
+        </div>
+        <div id="container" class="my-10 mx-3">
+
+        </div>
+
+
+        <section id="table-data">
+            <div id="section">
+
+            </div>
+            <div class="overflow-x-auto w-full lg:w-[60%] m-auto my-10">
+    
+                <table class="table bg-blue-100 text-black text-left	">
+                  <thead id="thead" class="text-black">
+                   
+                  </thead>
+                  <tbody id="tbody" class="text-black">
+                  
+                  </tbody>
+                </table>
+            </div>
+        </section>
+
+    </body>
+
+    
+ 
+
+
+    <script src="script.js"></script>
+</body>
+</html>
