@@ -46,6 +46,13 @@ In this repository ,i will share those which are made up using public api.
 <b>Language: </b> HTML5,Tailwind CSS Framework,JAVASCRIPT <br>
 <b>Focused: </b> API <br>
 <b>Live: </b> https://country-tour-api.netlify.app/
+</p> </li>
+<li> <p>
+<b> Project:</b> AI Universe Hub <br>
+<b>Language: </b> HTML5,Tailwind CSS Framework,JAVASCRIPT <br>
+<b>Focused: </b> API <br>
+<b>Live: </b> https://api-universe-hub-ahsan.netlify.app/
+</p> </li>
 
 </ol>
 
